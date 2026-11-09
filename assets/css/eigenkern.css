@@ -99,7 +99,7 @@ a:hover { text-decoration-thickness: 2px; }
 /* Branchen: a typecase grid with shared rules, no floating cards */
 .ek-branchen { display: grid; grid-template-columns: 1fr; border-top: 1px solid var(--ek-ink); }
 .ek-branche { display: grid; grid-template-columns: auto 1fr; gap: .25rem 1rem; padding: 1.5rem 1.25rem 1.75rem 0; border-bottom: 1px solid var(--ek-line);
-  color: var(--ek-ink); text-decoration: none; }
+  color: var(--ek-ink); text-decoration: none; align-content: start; }
 .ek-branche .ek-icon { grid-row: span 2; color: var(--ek-ink); margin-top: .15rem; }
 .ek-branche h3 { font-size: 1.125rem; margin: 0; }
 .ek-branche p { margin: 0; color: var(--ek-steel); font-size: .9688rem; }

@@ -82,6 +82,7 @@ assets/vendor/           Bootstrap 5.3.3 dist files
 tools/build_sprite.py    builds the icon sprite
 tools/build_flow.py      generates the Wächter SVGs and inlines them into the pages
 tools/render.py          PNG renders with headless Chromium
+tools/overview.py        combines the renders into renders/overview.jpg
 tests/                   validation, asset/link/privacy check, contrast, browser checks
 renders/                 PNG previews and overview JPG
 ```
