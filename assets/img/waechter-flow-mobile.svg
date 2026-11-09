@@ -1,0 +1,63 @@
+<svg class="ek-flow ek-flow--tall" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 1594" role="img" aria-labelledby="ek-flowt-title ek-flowt-desc" font-family="Fira Sans, Segoe UI, system-ui, sans-serif">
+  <title id="ek-flowt-title">So arbeitet der Wächter</title>
+  <desc id="ek-flowt-desc">Das Original bleibt im Haus. Der Wächter ersetzt Namen und vertrauliche Angaben durch Platzhalter und schickt nur diese Schattenkopie an die Cloud-KI. Die Antwort kommt mit Platzhaltern zurück, und erst im Haus setzt der Wächter die echten Angaben wieder ein. Beispiel mit erfundenen Angaben.</desc>
+  <defs><marker id="ek-arrowt-16222e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16222e"/></marker><marker id="ek-arrowt-1d6f47" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d6f47"/></marker><marker id="ek-arrowt-3d5a78" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3d5a78"/></marker></defs>
+  <rect x="10" y="10" width="380" height="490" rx="4" fill="#ffffff" stroke="#16222e" stroke-width="3"/>
+  <text x="30" y="42" font-size="16" font-weight="600" fill="#16222e">Ihr Haus: Originale bleiben hier</text>
+    <rect x="30" y="60" width="340" height="190" rx="4" fill="#ffffff" stroke="#16222e" stroke-width="1.5"/>
+    <text x="50" y="92" font-size="17" font-weight="600" fill="#16222e">1  Original</text>
+    <text x="50" y="116" font-size="14" fill="#4f5d6b">Dokument auf dem Gerät im Haus</text>
+    <text x="50" y="144" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#16222e">Frau Muster Alpha</tspan> von der</text>
+    <text x="50" y="168" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#16222e">Muster GmbH</tspan> bittet um Rückruf</text>
+    <text x="50" y="192" font-size="15.5" fill="#4f5d6b">zur Rechnung <tspan font-weight="600" fill="#16222e">RE-2026-0815</tspan></text>
+    <text x="50" y="216" font-size="15.5" fill="#4f5d6b">über 4.800 €.</text>
+    <line x1="200.0" y1="254" x2="200.0" y2="280" stroke="#1d6f47" stroke-width="2" marker-end="url(#ek-arrowt-1d6f47)"/>
+    <rect x="30" y="286" width="340" height="190" rx="4" fill="#e2f0e7" stroke="#1d6f47" stroke-width="1.5"/>
+    <text x="50" y="318" font-size="17" font-weight="600" fill="#16222e">2  Schattenkopie</text>
+    <text x="50" y="342" font-size="14" fill="#4f5d6b">Wächter ersetzt Namen und Kennungen</text>
+    <text x="50" y="370" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#5b6773">[Person 1]</tspan> von der</text>
+    <text x="50" y="394" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#5b6773">[Firma 1]</tspan> bittet um Rückruf</text>
+    <text x="50" y="418" font-size="15.5" fill="#4f5d6b">zur Rechnung <tspan font-weight="600" fill="#5b6773">[Kennung 1]</tspan></text>
+    <text x="50" y="442" font-size="15.5" fill="#4f5d6b">über 4.800 €.</text>
+    <line x1="350" y1="480" x2="350" y2="584" stroke="#3d5a78" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ek-arrowt-3d5a78)"/>
+    <rect x="208" y="510" width="124" height="22" fill="#ffffff"/>
+    <text x="270" y="526" font-size="14" font-weight="500" fill="#3d5a78" text-anchor="middle">nur der Schatten</text>
+  <rect x="10" y="540" width="380" height="490" rx="4" fill="none" stroke="#3d5a78" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="30" y="572" font-size="16" font-weight="600" fill="#3d5a78">Cloud-KI, nur wenn Sie es wollen</text>
+    <rect x="30" y="590" width="340" height="190" rx="4" fill="#ffffff" stroke="#3d5a78" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <text x="50" y="622" font-size="17" font-weight="600" fill="#3d5a78">3  Cloud-KI arbeitet</text>
+    <text x="50" y="646" font-size="14" fill="#4f5d6b">z. B. ChatGPT oder Claude</text>
+    <text x="50" y="674" font-size="15.5" fill="#4f5d6b">Aufgabe: Rückruf vorbereiten,</text>
+    <text x="50" y="698" font-size="15.5" fill="#4f5d6b">Antwortschreiben entwerfen.</text>
+    <text x="50" y="722" font-size="15.5" fill="#4f5d6b">Sie sieht nur <tspan font-weight="600" fill="#5b6773">[Person 1]</tspan>,</text>
+    <text x="50" y="746" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#5b6773">[Firma 1]</tspan> und <tspan font-weight="600" fill="#5b6773">[Kennung 1]</tspan>.</text>
+    <line x1="200.0" y1="784" x2="200.0" y2="810" stroke="#3d5a78" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ek-arrowt-3d5a78)"/>
+    <rect x="30" y="816" width="340" height="190" rx="4" fill="#ffffff" stroke="#3d5a78" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <text x="50" y="848" font-size="17" font-weight="600" fill="#3d5a78">Antwort im Schatten</text>
+    <text x="50" y="872" font-size="14" fill="#4f5d6b">kommt mit Platzhaltern zurück</text>
+    <text x="50" y="900" font-size="15.5" fill="#4f5d6b">Sehr geehrte <tspan font-weight="600" fill="#5b6773">[Person 1]</tspan>,</text>
+    <text x="50" y="924" font-size="15.5" fill="#4f5d6b">gern rufen wir Sie zur</text>
+    <text x="50" y="948" font-size="15.5" fill="#4f5d6b">Rechnung <tspan font-weight="600" fill="#5b6773">[Kennung 1]</tspan> zurück.</text>
+    <text x="50" y="972" font-size="15.5" fill="#4f5d6b">Mit freundlichen Grüßen</text>
+    <line x1="350" y1="1010" x2="350" y2="1114" stroke="#3d5a78" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ek-arrowt-3d5a78)"/>
+    <rect x="208" y="1040" width="124" height="22" fill="#ffffff"/>
+    <text x="270" y="1056" font-size="14" font-weight="500" fill="#3d5a78" text-anchor="middle">Antwort zurück</text>
+  <rect x="10" y="1070" width="380" height="490" rx="4" fill="#ffffff" stroke="#16222e" stroke-width="3"/>
+  <text x="30" y="1102" font-size="16" font-weight="600" fill="#16222e">Wieder im Haus</text>
+    <rect x="30" y="1120" width="340" height="190" rx="4" fill="#e2f0e7" stroke="#1d6f47" stroke-width="1.5"/>
+    <text x="50" y="1152" font-size="17" font-weight="600" fill="#16222e">Zuordnung im Haus</text>
+    <text x="50" y="1176" font-size="14" fill="#4f5d6b">Wächter setzt echte Angaben ein</text>
+    <text x="50" y="1204" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#5b6773">[Person 1]</tspan>  =  <tspan font-weight="600" fill="#16222e">Frau Muster Alpha</tspan></text>
+    <text x="50" y="1228" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#5b6773">[Firma 1]</tspan>  =  <tspan font-weight="600" fill="#16222e">Muster GmbH</tspan></text>
+    <text x="50" y="1252" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#5b6773">[Kennung 1]</tspan>  =  <tspan font-weight="600" fill="#16222e">RE-2026-0815</tspan></text>
+    <text x="50" y="1276" font-size="15.5" fill="#4f5d6b">Die Liste verlässt das Haus nie.</text>
+    <line x1="200.0" y1="1314" x2="200.0" y2="1340" stroke="#1d6f47" stroke-width="2" marker-end="url(#ek-arrowt-1d6f47)"/>
+    <rect x="30" y="1346" width="340" height="190" rx="4" fill="#ffffff" stroke="#16222e" stroke-width="1.5"/>
+    <text x="50" y="1378" font-size="17" font-weight="600" fill="#16222e">4  Antwort mit echten Angaben</text>
+    <text x="50" y="1402" font-size="14" fill="#4f5d6b">fertig zur Freigabe durch Sie</text>
+    <text x="50" y="1430" font-size="15.5" fill="#4f5d6b">Sehr geehrte <tspan font-weight="600" fill="#16222e">Frau Muster Alpha</tspan>,</text>
+    <text x="50" y="1454" font-size="15.5" fill="#4f5d6b">gern rufen wir Sie zur</text>
+    <text x="50" y="1478" font-size="15.5" fill="#4f5d6b">Rechnung <tspan font-weight="600" fill="#16222e">RE-2026-0815</tspan> zurück.</text>
+    <text x="50" y="1502" font-size="15.5" fill="#4f5d6b">Mit freundlichen Grüßen</text>
+  <text x="390" y="1586" font-size="13" fill="#4f5d6b" text-anchor="end">Beispiel mit erfundenen Angaben.</text>
+</svg>

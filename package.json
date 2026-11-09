@@ -1,0 +1,12 @@
+{
+  "name": "eigenkern-homepage-concept",
+  "private": true,
+  "description": "Homepage design concept for EIGENKERN as a buildable Bootstrap 5 static prototype (Odoo-ready).",
+  "license": "MIT",
+  "scripts": {
+    "test": "bash tests/run.sh"
+  },
+  "devDependencies": {
+    "html-validate": "11.21.0"
+  }
+}

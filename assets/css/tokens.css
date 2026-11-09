@@ -1,0 +1,16 @@
+/* EIGENKERN concept: design tokens.
+   In Odoo these map to the theme palette in primary_variables.scss (see README). */
+:root {
+  --ek-ink: #16222e;          /* Tinte: headings, text, dark sections */
+  --ek-steel: #4f5d6b;        /* Stahl: secondary text, UI borders */
+  --ek-mist: #b9c4ce;         /* Nebel: secondary text on ink */
+  --ek-line: #d3dae0;         /* Linie: hairlines and grid */
+  --ek-paper: #eef1f3;        /* Papier: cool light section background */
+  --ek-white: #ffffff;
+  --ek-signal: #1d6f47;       /* Signalgrün: primary action, "bleibt im Haus" */
+  --ek-signal-dark: #155637;
+  --ek-signal-light: #7fd1a3; /* signal on ink */
+  --ek-signal-tint: #e2f0e7;
+  --ek-shadow: #5b6773;       /* Schatten: placeholder tokens */
+  --ek-cloud: #3d5a78;        /* Cloud zone, outside the house */
+}

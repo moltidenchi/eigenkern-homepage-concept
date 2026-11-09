@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EIGENKERN: Ihre eigene KI. Im eigenen Haus. (Gestaltungsentwurf)</title>
+  <meta name="description" content="Gestaltungsentwurf für die Startseite von EIGENKERN: lokale KI für Betriebe in Deutschland. Ihre Unterlagen bleiben im Haus, Antworten mit Fundstelle, keine Kosten pro Frage.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#16222e">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/fira-sans/fira-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fira-sans/fira-sans-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/vendor/bootstrap-5.3.3/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/eigenkern.css">
+</head>
+<body>
+<a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+<!-- Odoo: website.layout header (custom header template in the theme module) -->
+<header class="ek-header sticky-top">
+  <nav class="navbar navbar-expand-lg" aria-label="Hauptnavigation">
+    <div class="container">
+      <a class="ek-wordmark navbar-brand" translate="no" href="#top" aria-label="EIGENKERN Startseite">
+        <svg viewBox="0 0 28 28" aria-hidden="true"><rect x="1.5" y="1.5" width="25" height="25" rx="2" fill="none" stroke="currentColor" stroke-width="3"/><rect x="9" y="9" width="10" height="10" fill="#1d6f47"/></svg>
+        EIGENKERN
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ek-nav" aria-controls="ek-nav" aria-expanded="false" aria-label="Menü öffnen">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="ek-nav">
+        <ul class="navbar-nav mx-lg-auto">
+          <li class="nav-item"><a class="nav-link" href="#wege">Lokale KI</a></li>
+          <li class="nav-item"><a class="nav-link" href="#waechter">Wächter</a></li>
+          <li class="nav-item"><a class="nav-link" href="#branchen">Branchen</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kosten">Kosten</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fragen">Fragen</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3 pb-3 pb-lg-0">
+          <a class="ek-lang" href="#top" lang="en" hreflang="en">EN</a>
+          <a class="btn btn-primary" href="#kontakt">Gespräch vereinbaren</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="inhalt">
+
+<!-- Odoo snippet: s_ek_hero (custom, based on s_text_image) -->
+<section class="ek-hero" id="top" data-snippet="s_ek_hero">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <h1><span class="d-block">Ihre eigene KI.</span> <span class="d-block">Im eigenen Haus.</span></h1>
+        <p class="ek-lead">Eigenkern bringt KI in Ihren Betrieb, ohne dass Ihre Unterlagen das Haus verlassen. Ein kompakter KI-Rechner liest Ihre Unterlagen vor Ort und antwortet mit Fundstelle. Keine Kosten pro Frage, auch ohne Internet.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a class="btn btn-primary" href="#branchen">Meine Branche wählen</a>
+          <a class="btn btn-outline-secondary" href="#kontakt">Mit eigenen Daten testen</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <figure class="m-0">
+          <svg class="ek-plan" viewBox="0 0 600 470" role="img" aria-labelledby="ek-plan-title ek-plan-desc" xmlns="http://www.w3.org/2000/svg">
+            <title id="ek-plan-title">Grundriss: das Tresor-Prinzip</title>
+            <desc id="ek-plan-desc">Ein Betrieb im Grundriss. Akten, Verträge und E-Mails sind mit dem KI-Rechner im Haus verbunden, alle Arbeitsplätze greifen darauf zu. Nur durch den Wächter an der Außenwand führt eine gestrichelte Linie zur Cloud-KI: Dort hinaus geht nur die Schattenkopie.</desc>
+            <defs>
+              <pattern id="ek-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#e3e8ec" stroke-width="1"/></pattern>
+            </defs>
+            <rect x="0" y="0" width="600" height="470" fill="url(#ek-grid)"/>
+            <!-- dimension line -->
+            <g stroke="#4f5d6b" stroke-width="1">
+              <line x1="40" y1="28" x2="470" y2="28"/><line x1="40" y1="20" x2="40" y2="44"/><line x1="470" y1="20" x2="470" y2="44"/>
+            </g>
+            <rect x="140" y="17" width="230" height="22" fill="#ffffff"/>
+            <text x="255" y="33" font-size="15" font-weight="500" fill="#16222e" text-anchor="middle">Ihr Haus: Originale bleiben hier</text>
+            <!-- walls -->
+            <g stroke="#16222e" stroke-width="7" fill="none" stroke-linecap="square">
+              <path d="M120 430H40V50H470V245"/>
+              <path d="M470 295V430H180"/>
+              <path d="M260 50V130M260 185V250H40"/>
+            </g>
+            <path d="M120 430a60 60 0 0 1 60 -60" fill="none" stroke="#4f5d6b" stroke-width="1" stroke-dasharray="3 3"/>
+            <!-- room labels -->
+            <text x="60" y="78" font-size="14" fill="#4f5d6b">Ablage</text>
+            <text x="282" y="78" font-size="14" fill="#4f5d6b">Serverraum oder Büro</text>
+            <text x="60" y="278" font-size="14" fill="#4f5d6b">Arbeitsplätze</text>
+            <!-- shelves -->
+            <g font-size="14" fill="#16222e">
+              <rect x="60" y="96" width="140" height="30" fill="#ffffff" stroke="#16222e" stroke-width="1.5"/><text x="74" y="116">Akten</text>
+              <rect x="60" y="140" width="140" height="30" fill="#ffffff" stroke="#16222e" stroke-width="1.5"/><text x="74" y="160">Verträge</text>
+              <rect x="60" y="184" width="140" height="30" fill="#ffffff" stroke="#16222e" stroke-width="1.5"/><text x="74" y="204">E-Mails</text>
+            </g>
+            <!-- data paths inside (through the door gap) -->
+            <g stroke="#1d6f47" stroke-width="2" fill="none">
+              <path d="M200 111H232V138H290"/><path d="M200 155H290"/><path d="M200 199H232V172H290"/>
+              <path d="M360 180V330H110V350"/><path d="M190 330V350"/><path d="M270 330V350"/><path d="M350 330V350"/>
+            </g>
+            <!-- device -->
+            <rect x="290" y="108" width="140" height="72" rx="3" fill="#16222e"/>
+            <circle cx="416" cy="122" r="4" fill="#7fd1a3"/>
+            <text x="306" y="136" font-size="17" font-weight="600" fill="#ffffff">MLKI</text>
+            <text x="306" y="156" font-size="12.5" fill="#b9c4ce">lokale KI, antwortet</text>
+            <text x="306" y="171" font-size="12.5" fill="#b9c4ce">mit Fundstelle</text>
+            <!-- desks -->
+            <g fill="#ffffff" stroke="#16222e" stroke-width="1.5">
+              <rect x="80" y="350" width="60" height="34"/><rect x="160" y="350" width="60" height="34"/><rect x="240" y="350" width="60" height="34"/><rect x="320" y="350" width="60" height="34"/>
+              <circle cx="110" cy="400" r="8"/><circle cx="190" cy="400" r="8"/><circle cx="270" cy="400" r="8"/><circle cx="350" cy="400" r="8"/>
+            </g>
+            <text x="60" y="300" font-size="14" fill="#16222e">alle Mitarbeiter, ohne Aufpreis</text>
+            <!-- guardian gate in the outer wall -->
+            <rect x="456" y="245" width="28" height="50" fill="#ffffff" stroke="#1d6f47" stroke-width="2.5"/>
+            <path d="M470 258l8 3v6c0 5-3.5 8.5-8 10c-4.5-1.5-8-5-8-10v-6z" fill="#1d6f47"/>
+            <path d="M430 150H446V270H456" fill="none" stroke="#1d6f47" stroke-width="2"/>
+            <text x="494" y="240" font-size="15" font-weight="600" fill="#1d6f47">Wächter</text>
+            <!-- shadow path to cloud -->
+            <path d="M484 270H545V350" fill="none" stroke="#3d5a78" stroke-width="2" stroke-dasharray="6 5"/>
+            <rect x="495" y="352" width="100" height="58" rx="3" fill="#ffffff" stroke="#3d5a78" stroke-width="2" stroke-dasharray="6 5"/>
+            <text x="545" y="377" font-size="15" font-weight="600" fill="#3d5a78" text-anchor="middle">Cloud-KI</text>
+            <text x="545" y="396" font-size="13" fill="#3d5a78" text-anchor="middle">optional</text>
+            <text x="545" y="432" font-size="13" fill="#3d5a78" text-anchor="middle">hinaus geht nur</text>
+            <text x="545" y="448" font-size="13" fill="#3d5a78" text-anchor="middle">die Schattenkopie</text>
+          </svg>
+          <figcaption class="ek-plan-caption">Das Tresor-Prinzip: Originale bleiben hinter Ihrer Tür. Nur die geprüfte Schattenkopie darf hinaus, und nur wenn Sie es wollen.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Odoo snippet: s_ek_facts (custom, based on s_features) -->
+<section class="ek-facts" data-snippet="s_ek_facts" aria-label="Das Versprechen in vier Punkten">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-0">
+      <div class="col"><div class="ek-fact pe-3"><svg class="ek-icon" aria-hidden="true"><use href="assets/icons/sprite.svg#house-lock"></use></svg><p class="m-0"><strong>Daten bleiben bei Ihnen</strong><span>Auf dem Gerät im Haus oder auf einem Server nur für Sie in Deutschland.</span></p></div></div>
+      <div class="col"><div class="ek-fact px-lg-4 pe-3"><svg class="ek-icon" aria-hidden="true"><use href="assets/icons/sprite.svg#currency-euro"></use></svg><p class="m-0"><strong>Keine Kosten pro Frage</strong><span>Und keine pro Kopf: alle Mitarbeiter ohne Aufpreis.</span></p></div></div>
+      <div class="col"><div class="ek-fact px-lg-4 pe-3"><svg class="ek-icon" aria-hidden="true"><use href="assets/icons/sprite.svg#file-earmark-text"></use></svg><p class="m-0"><strong>Antworten mit Fundstelle</strong><span>Aus Ihren Unterlagen, zum Nachprüfen. Steht nichts darin, sagt die KI das.</span></p></div></div>
+      <div class="col"><div class="ek-fact ps-lg-4 pe-3"><svg class="ek-icon" aria-hidden="true"><use href="assets/icons/sprite.svg#wifi-off"></use></svg><p class="m-0"><strong>Auch ohne Internet</strong><span>Das Gerät vor Ort antwortet auch offline.</span></p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Odoo snippet: s_ek_branchen (custom, based on s_features_grid) -->
+<section class="ek-section ek-bg-paper" id="branchen" data-snippet="s_ek_branchen" aria-labelledby="branchen-title">
+  <div class="container">
+    <div class="ek-section-head">
+      <h2 id="branchen-title">Wer sind Sie? Wählen Sie Ihr Fachgebiet.</h2>
+      <p class="ek-muted">Sie landen auf der Seite für Ihre Branche, mit Anwendungsfällen, Rechtlichem und Fragen. Überall, wo Wissen in Ordnern steckt.</p>
+    </div>
+    <div class="ek-branchen">
+      <a class="ek-branche" href="https://www.eigenkern.de/recht"><svg class="ek-icon" aria-hidden="true"><use href="assets/icons/sprite.svg#bank"></use></svg><h3>Rechtsanwälte und Notare</h3><p>Akten, Schriftsätze und die eigene Rechtsprechungssammlung befragen, ohne dass Dokumente an einen KI-Anbieter gehen.</p></a>
+      <a class="ek-branche" href="https://www.eigenkern.de/steuer"><svg class="ek-icon" aria-hidden="true"><use href="assets/icons/sprite.svg#receipt"></use></svg><h3>Steuerberatung</h3><p>Mandantenfragen, Belegeingang und Fristen aus den eigenen Akten beantworten, ohne dass Mandantendaten das Haus verlassen.</p></a>
+      <a class="ek-branche" href="https://www.eigenkern.de/aerzte"><svg class="ek-icon" aria-hidden="true"><use href="assets/icons/sprite.svg#clipboard2-pulse"></use></svg><h3>Medizin und Praxen</h3><p>QM-Handbuch, Hygienepläne und Dienstplanung: Wissen auf Abruf für das Praxisteam. Für Organisation, nicht für Diagnosen.</p></a>
+      <a class="ek-branche" href="https://www.eigenkern.de/handwerk"><svg class="ek-icon" aria-hidden="true"><use href="assets/icons/sprite.svg#wrench-adjustable"></use></svg><h3>Handwerk</h3><p>Aufträge, Fotos, Angebote und Datenblätter an einem Ort, auf dem Handy wie im Büro. Freigabe und Versand bleiben bei Ihnen.</p></a>
+      <a class="ek-branche" href="https://www.eigenkern.de/bildung"><svg class="ek-icon" aria-hidden="true"><use href="assets/icons/sprite.svg#mortarboard"></use></svg><h3>Schule und Bildung</h3><p>Unterlagen und Lernmaterial befragbar machen: für Schulen und Bildungsträger, in der eigenen Umgebung.</p></a>
+      <a class="ek-branche" href="https://www.eigenkern.de/verwaltung"><svg class="ek-icon" aria-hidden="true"><use href="assets/icons/sprite.svg#buildings"></use></svg><h3>Verwaltung und Kommunen</h3><p>Pläne, Gutachten, Satzungen und Vorlagen durchsuchen; Protokolle und Berichte als Entwurf.</p></a>
+      <a class="ek-branche" href="https://www.eigenkern.de/maschinenlernsystem"><svg class="ek-icon" aria-hidden="true"><use href="assets/icons/sprite.svg#lightning-charge"></use></svg><h3>Energie und Biogas</h3><p>Das Maschinenlernsystem beantwortet Fragen zur Anlage aus Messdaten. Energie ist unser Fachgebiet.</p></a>
+      <a class="ek-branche" href="https://www.eigenkern.de/industrie"><svg class="ek-icon" aria-hidden="true"><use href="assets/icons/sprite.svg#gear-wide-connected"></use></svg><h3>Industrie und Maschinenbau</h3><p>Handbücher, Wartung, Qualitätsunterlagen und Betriebsdaten zusammenführen und befragen.</p></a>
+      <a class="ek-branche" href="https://www.eigenkern.de/landwirtschaft"><svg class="ek-icon" aria-hidden="true"><use href="assets/icons/sprite.svg#tree"></use></svg><h3>Landwirtschaft</h3><p>Hofunterlagen, Verträge und Betriebsdaten durchsuchen und befragen, ohne dass sie das Haus verlassen.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- Odoo snippet: s_ek_wege (custom, based on s_three_columns) -->
+<section class="ek-section" id="wege" data-snippet="s_ek_wege" aria-labelledby="wege-title">
+  <div class="container">
+    <div class="ek-section-head">
+      <h2 id="wege-title">Lokal, eigener Server oder Hybrid: Sie entscheiden.</h2>
+      <p class="ek-muted">Alle drei Wege erklären wir im Einführungsvideo mit ihren Vor- und Nachteilen, bevor Sie sich festlegen.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <article class="ek-weg">
+          <svg class="ek-weg-diagram" viewBox="0 0 320 130" aria-hidden="true">
+            <path d="M20 120V48L100 12L180 48V120Z" fill="none" stroke="#16222e" stroke-width="3" stroke-linejoin="round"/>
+            <rect x="70" y="66" width="60" height="34" rx="2" fill="#16222e"/><circle cx="120" cy="74" r="3" fill="#7fd1a3"/>
+            <path d="M40 112h22M40 104h22M40 96h22" stroke="#4f5d6b" stroke-width="2"/>
+            <path d="M62 100H70" stroke="#1d6f47" stroke-width="2"/>
+            <text x="200" y="74" font-size="14" fill="#4f5d6b">alles im Haus</text>
+          </svg>
+          <h3><svg class="ek-icon ek-icon-sm me-2" aria-hidden="true"><use href="assets/icons/sprite.svg#house-lock"></use></svg>Lokal</h3>
+          <p class="ek-weg-claim">Alles läuft auf dem Gerät in Ihrem Haus.</p>
+          <ul>
+            <li>Ihre Unterlagen werden vor Ort gelesen und eingeordnet.</li>
+            <li>Bei sehr großen Beständen übernimmt auf Wunsch ein Rechenzentrum in Deutschland das erste Einlesen, mit Vertrag zur Auftragsverarbeitung.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="ek-weg">
+          <svg class="ek-weg-diagram" viewBox="0 0 320 130" aria-hidden="true">
+            <path d="M20 120V48L100 12L180 48V120Z" fill="none" stroke="#16222e" stroke-width="3" stroke-linejoin="round"/>
+            <rect x="72" y="80" width="56" height="26" rx="2" fill="none" stroke="#16222e" stroke-width="2"/>
+            <path d="M128 93H226" stroke="#1d6f47" stroke-width="2"/>
+            <rect x="226" y="40" width="70" height="80" rx="2" fill="#16222e"/>
+            <path d="M238 58h46M238 76h46M238 94h46" stroke="#b9c4ce" stroke-width="2"/>
+            <text x="226" y="30" font-size="14" fill="#4f5d6b">Deutschland</text>
+          </svg>
+          <h3><svg class="ek-icon ek-icon-sm me-2" aria-hidden="true"><use href="assets/icons/sprite.svg#hdd-rack"></use></svg>Eigener Server</h3>
+          <p class="ek-weg-claim">Ihre KI läuft auf einem Server nur für Sie, in einem Rechenzentrum in Deutschland.</p>
+          <ul>
+            <li>Kein Gerät vor Ort nötig.</li>
+            <li>Mit Vertrag zur Auftragsverarbeitung.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="ek-weg ek-weg--hybrid">
+          <svg class="ek-weg-diagram" viewBox="0 0 320 130" aria-hidden="true">
+            <path d="M20 120V48L100 12L180 48V120Z" fill="none" stroke="#16222e" stroke-width="3" stroke-linejoin="round"/>
+            <rect x="60" y="66" width="60" height="34" rx="2" fill="#16222e"/><circle cx="110" cy="74" r="3" fill="#7fd1a3"/>
+            <rect x="168" y="70" width="24" height="30" fill="#ffffff" stroke="#1d6f47" stroke-width="2.5"/>
+            <path d="M120 85H168" stroke="#1d6f47" stroke-width="2"/>
+            <path d="M192 85H236" stroke="#3d5a78" stroke-width="2" stroke-dasharray="5 4"/>
+            <rect x="236" y="62" width="70" height="46" rx="3" fill="none" stroke="#3d5a78" stroke-width="2" stroke-dasharray="5 4"/>
+            <text x="271" y="90" font-size="13" fill="#3d5a78" text-anchor="middle">Cloud-KI</text>
+          </svg>
+          <h3><svg class="ek-icon ek-icon-sm me-2" aria-hidden="true"><use href="assets/icons/sprite.svg#shield-check"></use></svg>Hybrid <span class="ek-tag">zusätzlich buchbar</span></h3>
+          <p class="ek-weg-claim">Das Gerät in Ihrem Haus bleibt der Kern.</p>
+          <ul>
+            <li>Ein Wächter legt eine Schattenkopie an: Namen und vertrauliche Angaben werden durch Platzhalter ersetzt.</li>
+            <li>Damit nutzen Sie zusätzlich große Cloud-KIs wie ChatGPT oder Claude. Die Antworten werden bei Ihnen wieder mit den echten Angaben zusammengeführt.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Odoo snippet: s_ek_waechter (custom, based on s_text_block + s_image_text) -->
+<section class="ek-section ek-bg-paper" id="waechter" data-snippet="s_ek_waechter" aria-labelledby="waechter-title">
+  <div class="container">
+    <div class="row gy-4 mb-5">
+      <div class="col-lg-5">
+        <p class="ek-kicker">Der Wächter, kurz erklärt</p>
+        <h2 id="waechter-title">Ein Schatten hinaus ist besser als gar nichts.</h2>
+      </div>
+      <div class="col-lg-7">
+        <p>Die großen Cloud-KIs werden in rasantem Tempo besser: komfortabel, schnell und stark bei komplexen Aufgaben. Ihre privaten und geschäftlichen Daten möchten Sie ihnen trotzdem nicht überlassen.</p>
+        <p class="ek-muted">Deshalb schickt der Wächter nur einen Schatten hinaus: eine Schattenkopie Ihres Dokuments, in der Namen und vertrauliche Angaben durch Platzhalter wie <span class="ek-token">[Person 1]</span> ersetzt sind. Die Cloud-KI arbeitet mit dieser Kopie, die Antwort kommt zu Ihnen zurück, und erst bei Ihnen werden die Platzhalter wieder durch die echten Angaben ersetzt.</p>
+      </div>
+    </div>
+    <figure class="ek-flow-figure bg-white border">
+      <div>
+<!-- waechter-svg:start -->
+<svg class="ek-flow ek-flow--wide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="ek-flow-title ek-flow-desc" font-family="Fira Sans, Segoe UI, system-ui, sans-serif">
+  <title id="ek-flow-title">So arbeitet der Wächter</title>
+  <desc id="ek-flow-desc">Das Original bleibt im Haus. Der Wächter ersetzt Namen und vertrauliche Angaben durch Platzhalter und schickt nur diese Schattenkopie an die Cloud-KI. Die Antwort kommt mit Platzhaltern zurück, und erst im Haus setzt der Wächter die echten Angaben wieder ein. Beispiel mit erfundenen Angaben.</desc>
+  <defs><marker id="ek-arrow-16222e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16222e"/></marker><marker id="ek-arrow-1d6f47" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d6f47"/></marker><marker id="ek-arrow-3d5a78" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3d5a78"/></marker></defs>
+  <rect x="10" y="60" width="770" height="520" rx="4" fill="#ffffff" stroke="#16222e" stroke-width="3"/>
+  <text x="30" y="44" font-size="16" font-weight="600" fill="#16222e">Ihr Haus</text>
+  <text x="104" y="44" font-size="15" fill="#4f5d6b">Gerät im Betrieb oder eigener Server in Deutschland. Originale verlassen diesen Bereich nie.</text>
+  <rect x="380" y="76" width="350" height="488" rx="4" fill="#e2f0e7"/>
+  <text x="400" y="98" font-size="14" font-weight="600" fill="#1d6f47">Wächter: ersetzt und setzt wieder ein</text>
+  <rect x="840" y="60" width="350" height="520" rx="4" fill="none" stroke="#3d5a78" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="860" y="44" font-size="16" font-weight="600" fill="#3d5a78">Cloud-KI, nur wenn Sie es wollen</text>
+    <rect x="30" y="110" width="310" height="190" rx="4" fill="#ffffff" stroke="#16222e" stroke-width="1.5"/>
+    <text x="50" y="142" font-size="17" font-weight="600" fill="#16222e">1  Original</text>
+    <text x="50" y="166" font-size="14" fill="#4f5d6b">Dokument auf dem Gerät im Haus</text>
+    <text x="50" y="194" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#16222e">Frau Muster Alpha</tspan> von der</text>
+    <text x="50" y="218" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#16222e">Muster GmbH</tspan> bittet um Rückruf</text>
+    <text x="50" y="242" font-size="15.5" fill="#4f5d6b">zur Rechnung <tspan font-weight="600" fill="#16222e">RE-2026-0815</tspan></text>
+    <text x="50" y="266" font-size="15.5" fill="#4f5d6b">über 4.800 €.</text>
+    <rect x="410" y="110" width="310" height="190" rx="4" fill="#ffffff" stroke="#1d6f47" stroke-width="1.5"/>
+    <text x="430" y="142" font-size="17" font-weight="600" fill="#16222e">2  Schattenkopie</text>
+    <text x="430" y="166" font-size="14" fill="#4f5d6b">Namen und Kennungen ersetzt</text>
+    <text x="430" y="194" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#5b6773">[Person 1]</tspan> von der</text>
+    <text x="430" y="218" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#5b6773">[Firma 1]</tspan> bittet um Rückruf</text>
+    <text x="430" y="242" font-size="15.5" fill="#4f5d6b">zur Rechnung <tspan font-weight="600" fill="#5b6773">[Kennung 1]</tspan></text>
+    <text x="430" y="266" font-size="15.5" fill="#4f5d6b">über 4.800 €.</text>
+    <rect x="860" y="110" width="310" height="190" rx="4" fill="#ffffff" stroke="#3d5a78" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <text x="880" y="142" font-size="17" font-weight="600" fill="#3d5a78">3  Cloud-KI arbeitet</text>
+    <text x="880" y="166" font-size="14" fill="#4f5d6b">z. B. ChatGPT oder Claude</text>
+    <text x="880" y="194" font-size="15.5" fill="#4f5d6b">Aufgabe: Rückruf vorbereiten,</text>
+    <text x="880" y="218" font-size="15.5" fill="#4f5d6b">Antwortschreiben entwerfen.</text>
+    <text x="880" y="242" font-size="15.5" fill="#4f5d6b">Sie sieht nur <tspan font-weight="600" fill="#5b6773">[Person 1]</tspan>,</text>
+    <text x="880" y="266" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#5b6773">[Firma 1]</tspan> und <tspan font-weight="600" fill="#5b6773">[Kennung 1]</tspan>.</text>
+    <rect x="860" y="360" width="310" height="190" rx="4" fill="#ffffff" stroke="#3d5a78" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <text x="880" y="392" font-size="17" font-weight="600" fill="#3d5a78">Antwort im Schatten</text>
+    <text x="880" y="416" font-size="14" fill="#4f5d6b">kommt mit Platzhaltern zurück</text>
+    <text x="880" y="444" font-size="15.5" fill="#4f5d6b">Sehr geehrte <tspan font-weight="600" fill="#5b6773">[Person 1]</tspan>,</text>
+    <text x="880" y="468" font-size="15.5" fill="#4f5d6b">gern rufen wir Sie zur</text>
+    <text x="880" y="492" font-size="15.5" fill="#4f5d6b">Rechnung <tspan font-weight="600" fill="#5b6773">[Kennung 1]</tspan> zurück.</text>
+    <text x="880" y="516" font-size="15.5" fill="#4f5d6b">Mit freundlichen Grüßen</text>
+    <rect x="410" y="360" width="310" height="190" rx="4" fill="#ffffff" stroke="#1d6f47" stroke-width="1.5"/>
+    <text x="430" y="392" font-size="17" font-weight="600" fill="#16222e">Zuordnung im Haus</text>
+    <text x="430" y="416" font-size="14" fill="#4f5d6b">Wächter setzt echte Angaben ein</text>
+    <text x="430" y="444" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#5b6773">[Person 1]</tspan>  =  <tspan font-weight="600" fill="#16222e">Frau Muster Alpha</tspan></text>
+    <text x="430" y="468" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#5b6773">[Firma 1]</tspan>  =  <tspan font-weight="600" fill="#16222e">Muster GmbH</tspan></text>
+    <text x="430" y="492" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#5b6773">[Kennung 1]</tspan>  =  <tspan font-weight="600" fill="#16222e">RE-2026-0815</tspan></text>
+    <text x="430" y="516" font-size="15.5" fill="#4f5d6b">Die Liste verlässt das Haus nie.</text>
+    <rect x="30" y="360" width="310" height="190" rx="4" fill="#ffffff" stroke="#16222e" stroke-width="1.5"/>
+    <text x="50" y="392" font-size="17" font-weight="600" fill="#16222e">4  Antwort mit echten Angaben</text>
+    <text x="50" y="416" font-size="14" fill="#4f5d6b">fertig zur Freigabe durch Sie</text>
+    <text x="50" y="444" font-size="15.5" fill="#4f5d6b">Sehr geehrte <tspan font-weight="600" fill="#16222e">Frau Muster Alpha</tspan>,</text>
+    <text x="50" y="468" font-size="15.5" fill="#4f5d6b">gern rufen wir Sie zur</text>
+    <text x="50" y="492" font-size="15.5" fill="#4f5d6b">Rechnung <tspan font-weight="600" fill="#16222e">RE-2026-0815</tspan> zurück.</text>
+    <text x="50" y="516" font-size="15.5" fill="#4f5d6b">Mit freundlichen Grüßen</text>
+    <line x1="344" y1="205" x2="404" y2="205" stroke="#1d6f47" stroke-width="2" marker-end="url(#ek-arrow-1d6f47)"/>
+    <line x1="724" y1="205" x2="854" y2="205" stroke="#3d5a78" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ek-arrow-3d5a78)"/>
+    <rect x="738" y="176" width="124" height="22" fill="#ffffff"/>
+    <text x="800" y="192" font-size="14" font-weight="500" fill="#3d5a78" text-anchor="middle">nur der Schatten</text>
+    <line x1="1015.0" y1="306" x2="1015.0" y2="352" stroke="#3d5a78" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ek-arrow-3d5a78)"/>
+    <line x1="856" y1="455" x2="726" y2="455" stroke="#3d5a78" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ek-arrow-3d5a78)"/>
+    <rect x="738" y="426" width="124" height="22" fill="#ffffff"/>
+    <text x="800" y="442" font-size="14" font-weight="500" fill="#3d5a78" text-anchor="middle">Antwort zurück</text>
+    <line x1="406" y1="455" x2="346" y2="455" stroke="#1d6f47" stroke-width="2" marker-end="url(#ek-arrow-1d6f47)"/>
+  <text x="1180" y="608" font-size="13" fill="#4f5d6b" text-anchor="end">Beispiel mit erfundenen Angaben.</text>
+</svg>
+<svg class="ek-flow ek-flow--tall" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 1594" role="img" aria-labelledby="ek-flowt-title ek-flowt-desc" font-family="Fira Sans, Segoe UI, system-ui, sans-serif">
+  <title id="ek-flowt-title">So arbeitet der Wächter</title>
+  <desc id="ek-flowt-desc">Das Original bleibt im Haus. Der Wächter ersetzt Namen und vertrauliche Angaben durch Platzhalter und schickt nur diese Schattenkopie an die Cloud-KI. Die Antwort kommt mit Platzhaltern zurück, und erst im Haus setzt der Wächter die echten Angaben wieder ein. Beispiel mit erfundenen Angaben.</desc>
+  <defs><marker id="ek-arrowt-16222e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16222e"/></marker><marker id="ek-arrowt-1d6f47" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d6f47"/></marker><marker id="ek-arrowt-3d5a78" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3d5a78"/></marker></defs>
+  <rect x="10" y="10" width="380" height="490" rx="4" fill="#ffffff" stroke="#16222e" stroke-width="3"/>
+  <text x="30" y="42" font-size="16" font-weight="600" fill="#16222e">Ihr Haus: Originale bleiben hier</text>
+    <rect x="30" y="60" width="340" height="190" rx="4" fill="#ffffff" stroke="#16222e" stroke-width="1.5"/>
+    <text x="50" y="92" font-size="17" font-weight="600" fill="#16222e">1  Original</text>
+    <text x="50" y="116" font-size="14" fill="#4f5d6b">Dokument auf dem Gerät im Haus</text>
+    <text x="50" y="144" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#16222e">Frau Muster Alpha</tspan> von der</text>
+    <text x="50" y="168" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#16222e">Muster GmbH</tspan> bittet um Rückruf</text>
+    <text x="50" y="192" font-size="15.5" fill="#4f5d6b">zur Rechnung <tspan font-weight="600" fill="#16222e">RE-2026-0815</tspan></text>
+    <text x="50" y="216" font-size="15.5" fill="#4f5d6b">über 4.800 €.</text>
+    <line x1="200.0" y1="254" x2="200.0" y2="280" stroke="#1d6f47" stroke-width="2" marker-end="url(#ek-arrowt-1d6f47)"/>
+    <rect x="30" y="286" width="340" height="190" rx="4" fill="#e2f0e7" stroke="#1d6f47" stroke-width="1.5"/>
+    <text x="50" y="318" font-size="17" font-weight="600" fill="#16222e">2  Schattenkopie</text>
+    <text x="50" y="342" font-size="14" fill="#4f5d6b">Wächter ersetzt Namen und Kennungen</text>
+    <text x="50" y="370" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#5b6773">[Person 1]</tspan> von der</text>
+    <text x="50" y="394" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#5b6773">[Firma 1]</tspan> bittet um Rückruf</text>
+    <text x="50" y="418" font-size="15.5" fill="#4f5d6b">zur Rechnung <tspan font-weight="600" fill="#5b6773">[Kennung 1]</tspan></text>
+    <text x="50" y="442" font-size="15.5" fill="#4f5d6b">über 4.800 €.</text>
+    <line x1="350" y1="480" x2="350" y2="584" stroke="#3d5a78" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ek-arrowt-3d5a78)"/>
+    <rect x="208" y="510" width="124" height="22" fill="#ffffff"/>
+    <text x="270" y="526" font-size="14" font-weight="500" fill="#3d5a78" text-anchor="middle">nur der Schatten</text>
+  <rect x="10" y="540" width="380" height="490" rx="4" fill="none" stroke="#3d5a78" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="30" y="572" font-size="16" font-weight="600" fill="#3d5a78">Cloud-KI, nur wenn Sie es wollen</text>
+    <rect x="30" y="590" width="340" height="190" rx="4" fill="#ffffff" stroke="#3d5a78" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <text x="50" y="622" font-size="17" font-weight="600" fill="#3d5a78">3  Cloud-KI arbeitet</text>
+    <text x="50" y="646" font-size="14" fill="#4f5d6b">z. B. ChatGPT oder Claude</text>
+    <text x="50" y="674" font-size="15.5" fill="#4f5d6b">Aufgabe: Rückruf vorbereiten,</text>
+    <text x="50" y="698" font-size="15.5" fill="#4f5d6b">Antwortschreiben entwerfen.</text>
+    <text x="50" y="722" font-size="15.5" fill="#4f5d6b">Sie sieht nur <tspan font-weight="600" fill="#5b6773">[Person 1]</tspan>,</text>
+    <text x="50" y="746" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#5b6773">[Firma 1]</tspan> und <tspan font-weight="600" fill="#5b6773">[Kennung 1]</tspan>.</text>
+    <line x1="200.0" y1="784" x2="200.0" y2="810" stroke="#3d5a78" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ek-arrowt-3d5a78)"/>
+    <rect x="30" y="816" width="340" height="190" rx="4" fill="#ffffff" stroke="#3d5a78" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <text x="50" y="848" font-size="17" font-weight="600" fill="#3d5a78">Antwort im Schatten</text>
+    <text x="50" y="872" font-size="14" fill="#4f5d6b">kommt mit Platzhaltern zurück</text>
+    <text x="50" y="900" font-size="15.5" fill="#4f5d6b">Sehr geehrte <tspan font-weight="600" fill="#5b6773">[Person 1]</tspan>,</text>
+    <text x="50" y="924" font-size="15.5" fill="#4f5d6b">gern rufen wir Sie zur</text>
+    <text x="50" y="948" font-size="15.5" fill="#4f5d6b">Rechnung <tspan font-weight="600" fill="#5b6773">[Kennung 1]</tspan> zurück.</text>
+    <text x="50" y="972" font-size="15.5" fill="#4f5d6b">Mit freundlichen Grüßen</text>
+    <line x1="350" y1="1010" x2="350" y2="1114" stroke="#3d5a78" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ek-arrowt-3d5a78)"/>
+    <rect x="208" y="1040" width="124" height="22" fill="#ffffff"/>
+    <text x="270" y="1056" font-size="14" font-weight="500" fill="#3d5a78" text-anchor="middle">Antwort zurück</text>
+  <rect x="10" y="1070" width="380" height="490" rx="4" fill="#ffffff" stroke="#16222e" stroke-width="3"/>
+  <text x="30" y="1102" font-size="16" font-weight="600" fill="#16222e">Wieder im Haus</text>
+    <rect x="30" y="1120" width="340" height="190" rx="4" fill="#e2f0e7" stroke="#1d6f47" stroke-width="1.5"/>
+    <text x="50" y="1152" font-size="17" font-weight="600" fill="#16222e">Zuordnung im Haus</text>
+    <text x="50" y="1176" font-size="14" fill="#4f5d6b">Wächter setzt echte Angaben ein</text>
+    <text x="50" y="1204" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#5b6773">[Person 1]</tspan>  =  <tspan font-weight="600" fill="#16222e">Frau Muster Alpha</tspan></text>
+    <text x="50" y="1228" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#5b6773">[Firma 1]</tspan>  =  <tspan font-weight="600" fill="#16222e">Muster GmbH</tspan></text>
+    <text x="50" y="1252" font-size="15.5" fill="#4f5d6b"><tspan font-weight="600" fill="#5b6773">[Kennung 1]</tspan>  =  <tspan font-weight="600" fill="#16222e">RE-2026-0815</tspan></text>
+    <text x="50" y="1276" font-size="15.5" fill="#4f5d6b">Die Liste verlässt das Haus nie.</text>
+    <line x1="200.0" y1="1314" x2="200.0" y2="1340" stroke="#1d6f47" stroke-width="2" marker-end="url(#ek-arrowt-1d6f47)"/>
+    <rect x="30" y="1346" width="340" height="190" rx="4" fill="#ffffff" stroke="#16222e" stroke-width="1.5"/>
+    <text x="50" y="1378" font-size="17" font-weight="600" fill="#16222e">4  Antwort mit echten Angaben</text>
+    <text x="50" y="1402" font-size="14" fill="#4f5d6b">fertig zur Freigabe durch Sie</text>
+    <text x="50" y="1430" font-size="15.5" fill="#4f5d6b">Sehr geehrte <tspan font-weight="600" fill="#16222e">Frau Muster Alpha</tspan>,</text>
+    <text x="50" y="1454" font-size="15.5" fill="#4f5d6b">gern rufen wir Sie zur</text>
+    <text x="50" y="1478" font-size="15.5" fill="#4f5d6b">Rechnung <tspan font-weight="600" fill="#16222e">RE-2026-0815</tspan> zurück.</text>
+    <text x="50" y="1502" font-size="15.5" fill="#4f5d6b">Mit freundlichen Grüßen</text>
+  <text x="390" y="1586" font-size="13" fill="#4f5d6b" text-anchor="end">Beispiel mit erfundenen Angaben.</text>
+</svg>
+<!-- waechter-svg:end -->
+      </div>
+    </figure>
+    <ol class="ek-steps">
+      <li><strong>Original bleibt bei Ihnen.</strong><span>Ihre Unterlagen liegen auf dem Gerät in Ihrem Haus.</span></li>
+      <li><strong>Wächter legt den Schatten an.</strong><span>Namen und vertrauliche Angaben werden durch Platzhalter ersetzt.</span></li>
+      <li><strong>Cloud-KI arbeitet am Schatten.</strong><span>Nur Inhalte der Schattenkopie gehen an den gewählten Cloud-Dienst.</span></li>
+      <li><strong>Antwort kommt zurück.</strong><span>Bei Ihnen wird sie wieder mit den echten Angaben zusammengeführt.</span></li>
+    </ol>
+    <p class="ek-note">Wächter und Schattenkopie buchen Sie zusätzlich. Ohne Hybrid geht nichts an eine Cloud-KI. <a href="https://www.eigenkern.de/pseudomizer">Mehr zum Pseudomizer</a></p>
+  </div>
+</section>
+
+<!-- Odoo snippet: s_ek_kosten (custom, based on s_text_image) -->
+<section class="ek-section ek-bg-ink ek-on-ink" id="kosten" data-snippet="s_ek_kosten" aria-labelledby="kosten-title">
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-lg-5">
+        <p class="ek-kicker">Klare Kosten</p>
+        <h2 id="kosten-title" class="mb-5">Einmal kaufen, nach Bedarf erweitern.</h2>
+        <p class="ek-zero ek-num" aria-hidden="true">0&nbsp;€</p>
+        <p class="ek-zero-label"><span class="visually-hidden">0 Euro </span>pro Frage und pro Kopf, weil das Gerät bei Ihnen rechnet.</p>
+      </div>
+      <div class="col-lg-7">
+        <div class="ek-cost-rows">
+          <div class="ek-cost-row"><h3>Einmalig</h3><p>Sie erwerben Hardware und Software. Danach zahlen Sie nichts pro Frage und nichts pro Kopf.</p></div>
+          <div class="ek-cost-row"><h3>Monatlich nach Wahl</h3><p>Zusatzpakete buchen Sie dazu, wenn Sie sie brauchen, zum Beispiel Rechnungsstellung, Mahnwesen, Kundenverwaltung (CRM) oder Branchenlösungen. Jedes Paket ist einzeln kündbar.</p></div>
+          <div class="ek-cost-row"><h3>Zusätzlich buchbar</h3><p>Das erste Einlesen großer Bestände im Rechenzentrum in Deutschland sowie für das Hybridmodell Wächter und Schattenkopie.</p></div>
+        </div>
+        <p class="mt-4 mb-4">Was das für Ihren Betrieb kostet, sagen wir Ihnen nach der Vorab-Analyse Ihrer Unterlagen.</p>
+        <a class="btn btn-light-signal" href="#kontakt">Vorab-Analyse anfragen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Odoo snippet: s_faq_collapse (standard Odoo snippet, restyled) -->
+<section class="ek-section ek-faq" id="fragen" data-snippet="s_faq_collapse" aria-labelledby="fragen-title">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+          <h2 id="fragen-title">Fragen, die jeder Betrieb stellen sollte.</h2>
+      </div>
+      <div class="col-lg-8">
+        <div class="accordion" id="ek-faq">
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="true" aria-controls="faq-1">Wo liegen meine Daten?</button></h3>
+            <div id="faq-1" class="accordion-collapse collapse show" data-bs-parent="#ek-faq"><div class="accordion-body"><p>Bei Ihnen im Haus oder auf einem Server nur für Sie in Deutschland. Bei einer Cloud-KI liegen sie auf Servern des Anbieters, häufig im Ausland.</p></div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2">Lernt jemand mit meinen Daten?</button></h3>
+            <div id="faq-2" class="accordion-collapse collapse" data-bs-parent="#ek-faq"><div class="accordion-body"><p>Nein. Die KI lernt nur in Ihrem Betrieb, das Wissen bleibt auf Ihrem Gerät.</p></div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3">Was kostet jede Frage, jeder Nutzer?</button></h3>
+            <div id="faq-3" class="accordion-collapse collapse" data-bs-parent="#ek-faq"><div class="accordion-body"><p>Nichts. Es gibt keine Kosten pro Frage, alle Mitarbeiter arbeiten ohne Aufpreis. Fragen viele gleichzeitig, wird es langsamer, nicht teurer.</p></div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-4" aria-expanded="false" aria-controls="faq-4">Geht es ohne Internet?</button></h3>
+            <div id="faq-4" class="accordion-collapse collapse" data-bs-parent="#ek-faq"><div class="accordion-body"><p>Ja, das Gerät vor Ort antwortet auch offline.</p></div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-5" aria-expanded="false" aria-controls="faq-5">Was passiert, wenn nichts in meinen Unterlagen steht?</button></h3>
+            <div id="faq-5" class="accordion-collapse collapse" data-bs-parent="#ek-faq"><div class="accordion-body"><p>Dann sagt die KI das. Sie erfindet nichts. Jede Antwort nennt ihre Fundstelle, damit Sie sie nachprüfen können.</p></div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-6" aria-expanded="false" aria-controls="faq-6">Brauchen wir Vorkenntnisse?</button></h3>
+            <div id="faq-6" class="accordion-collapse collapse" data-bs-parent="#ek-faq"><div class="accordion-body"><p>Nein. Sie bekommen ein fertig eingerichtetes Werkzeug, und wir schulen Ihr Team in Bedienung und Grenzen. Kurze Einführungsvideos gehören fest dazu.</p></div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-7" aria-expanded="false" aria-controls="faq-7">Was passiert bei einem Defekt?</button></h3>
+            <div id="faq-7" class="accordion-collapse collapse" data-bs-parent="#ek-faq"><div class="accordion-body"><p>Wir halten das System aktuell. Bei einem Defekt bekommen Sie innerhalb von 24&nbsp;Stunden ein Austauschgerät über unseren Hardwarepartner.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Odoo snippet: s_call_to_action (standard Odoo snippet, restyled) -->
+<section class="ek-section ek-bg-paper ek-cta" id="kontakt" data-snippet="s_call_to_action" aria-labelledby="kontakt-title">
+  <div class="container">
+    <div class="row align-items-end gy-4">
+      <div class="col-lg-7">
+        <h2 id="kontakt-title">Bringen Sie uns Ihr größtes Ärgernis mit.</h2>
+        <p class="ek-muted mb-0">Ein Gespräch, ein echter Vorgang aus Ihrem Alltag. Daran zeigen wir, was KI und Automatisierung bei Ihnen leisten.</p>
+      </div>
+      <div class="col-lg-5 d-flex flex-wrap gap-3 justify-content-lg-end">
+        <a class="btn btn-primary" href="mailto:info@beispiel.de">Gespräch vereinbaren</a>
+        <a class="btn btn-outline-secondary" href="mailto:info@beispiel.de?subject=Test%20mit%20eigenen%20Daten">Mit eigenen Daten testen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Odoo: website.footer_custom (custom footer template in the theme module) -->
+<footer class="ek-footer ek-on-ink">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <a class="ek-wordmark mb-3" translate="no" href="#top" aria-label="EIGENKERN, nach oben">
+          <svg viewBox="0 0 28 28" aria-hidden="true"><rect x="1.5" y="1.5" width="25" height="25" rx="2" fill="none" stroke="currentColor" stroke-width="3"/><rect x="9" y="9" width="10" height="10" fill="#7fd1a3"/></svg>
+          EIGENKERN
+        </a>
+        <p>Ihre eigene KI. Im eigenen Haus.</p>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <h2>Was wir tun</h2>
+        <ul><li><a href="#wege">Lokale KI</a></li><li><a href="#waechter">Der Wächter</a></li><li><a href="#kosten">Geräte und Kosten</a></li><li><a href="https://www.eigenkern.de/pseudomizer">Pseudomizer</a></li></ul>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <h2>Branchen</h2>
+        <ul><li><a href="https://www.eigenkern.de/recht">Recht</a></li><li><a href="https://www.eigenkern.de/steuer">Steuer</a></li><li><a href="https://www.eigenkern.de/aerzte">Praxen</a></li><li><a href="#branchen">Alle Branchen</a></li></ul>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <h2>Einblicke</h2>
+        <ul><li><a href="https://www.eigenkern.de/videos">Videos</a></li><li><a href="#fragen">Häufige Fragen</a></li><li><a href="https://www.eigenkern.de/partner">Partner werden</a></li></ul>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <h2>Kontakt</h2>
+        <ul><li><a href="mailto:info@beispiel.de">info@beispiel.de</a></li><li>Telefon: Platzhalter</li></ul>
+      </div>
+    </div>
+    <div class="ek-footer-base">
+      <span>Gestaltungsentwurf, Inhalte von eigenkern.de, Kontaktdaten sind Platzhalter.</span>
+      <span><a href="https://www.eigenkern.de/impressum">Impressum</a>&nbsp;&nbsp;&nbsp;<a href="https://www.eigenkern.de/datenschutz">Datenschutz</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/vendor/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+</body>
+</html>

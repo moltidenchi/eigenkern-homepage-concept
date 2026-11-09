@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EIGENKERN Style Tile (Gestaltungsentwurf)</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-5.3.3/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/eigenkern.css">
+  <style>
+    .st-board { padding-block: 3.5rem 4rem; }
+    .st-h { font-size: 1rem; font-weight: 600; color: var(--ek-steel); margin: 0 0 1.25rem; padding-bottom: .5rem; border-bottom: 1px solid var(--ek-line); letter-spacing: 0; }
+    .st-block { margin-bottom: 3rem; }
+    .st-swatch { border: 1px solid var(--ek-line); border-radius: var(--ek-radius-panel); overflow: hidden; height: 100%; background: var(--ek-white); }
+    .st-swatch .chip { height: 96px; display: flex; align-items: flex-end; padding: .75rem; font-weight: 500; }
+    .st-swatch .meta { padding: .75rem; font-size: .9375rem; }
+    .st-swatch .meta code, .st-board code { color: var(--ek-ink); font-family: inherit; font-size: inherit; font-weight: 500; font-variant-numeric: tabular-nums; }
+    .st-swatch .meta span { display: block; color: var(--ek-steel); }
+    .st-type p { margin-bottom: .25rem; }
+    .st-scale { display: grid; grid-template-columns: 7rem 1fr; gap: .75rem 1.5rem; align-items: baseline; }
+    .st-scale dt { font-weight: 400; color: var(--ek-steel); font-size: .9375rem; }
+    .st-scale dd { margin: 0; }
+    .st-alpha { font-size: 2.25rem; line-height: 1.25; letter-spacing: -0.01em; }
+    .st-icons { display: flex; flex-wrap: wrap; gap: 1.25rem 2rem; }
+    .st-icons figure { margin: 0; width: 5.5rem; text-align: center; font-size: .875rem; color: var(--ek-steel); }
+    .st-icons svg { width: 2rem; height: 2rem; color: var(--ek-ink); display: block; margin: 0 auto .5rem; }
+    .st-ink-panel { background: var(--ek-ink); color: var(--ek-white); padding: 1.5rem; border-radius: var(--ek-radius-panel); }
+    .st-rules li { margin-bottom: .35rem; }
+    .st-scale dd { min-width: 0; overflow-wrap: break-word; }
+    .st-alpha { overflow-wrap: break-word; }
+    @media (max-width: 575.98px) { .st-scale { grid-template-columns: 1fr; } .st-scale dd span[style] { font-size: 2rem !important; } }
+  </style>
+</head>
+<body>
+<main class="st-board">
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-5 pb-4 border-bottom border-dark border-2">
+      <div>
+        <span class="ek-wordmark mb-2" translate="no"><svg viewBox="0 0 28 28" aria-hidden="true"><rect x="1.5" y="1.5" width="25" height="25" rx="2" fill="none" stroke="currentColor" stroke-width="3"/><rect x="9" y="9" width="10" height="10" fill="#1d6f47"/></svg>EIGENKERN</span>
+        <h1 class="mb-0" style="font-size:3rem">Style Tile</h1>
+      </div>
+      <p class="ek-muted mb-0" style="max-width:34rem">Ernst, deutsch, ingenieurmäßig: Tinte und Papier wie in einer technischen Zeichnung, ein einziges Signalgrün für alles, was im Haus bleibt und was Sie tun können.</p>
+    </header>
+
+    <div class="row gx-4 gx-lg-5 gy-5">
+      <div class="col-lg-7">
+        <section class="st-block" aria-labelledby="st-colour">
+          <h2 class="st-h" id="st-colour">Farben</h2>
+          <div class="row row-cols-2 row-cols-md-4 g-3">
+            <div class="col"><div class="st-swatch"><div class="chip" style="background:var(--ek-ink);color:#fff">Tinte</div><div class="meta"><code>#16222E</code><span>Text, Flächen dunkel</span><span>16,1 : 1 auf Weiß</span></div></div></div>
+            <div class="col"><div class="st-swatch"><div class="chip" style="background:var(--ek-signal);color:#fff">Signalgrün</div><div class="meta"><code>#1D6F47</code><span>Aktion, „bleibt im Haus“</span><span>6,2 : 1 auf Weiß</span></div></div></div>
+            <div class="col"><div class="st-swatch"><div class="chip" style="background:var(--ek-steel);color:#fff">Stahl</div><div class="meta"><code>#4F5D6B</code><span>Zweittext, Linien</span><span>6,8 : 1 auf Weiß</span></div></div></div>
+            <div class="col"><div class="st-swatch"><div class="chip" style="background:var(--ek-cloud);color:#fff">Außen</div><div class="meta"><code>#3D5A78</code><span>Cloud-Bereich, gestrichelt</span><span>7,2 : 1 auf Weiß</span></div></div></div>
+            <div class="col"><div class="st-swatch"><div class="chip" style="background:var(--ek-paper)">Papier</div><div class="meta"><code>#EEF1F3</code><span>Abschnitte, kühl</span><span>Tinte darauf 14,2 : 1</span></div></div></div>
+            <div class="col"><div class="st-swatch"><div class="chip" style="background:var(--ek-line)">Linie</div><div class="meta"><code>#D3DAE0</code><span>Haarlinien, Raster</span><span>nur Dekor</span></div></div></div>
+            <div class="col"><div class="st-swatch"><div class="chip" style="background:var(--ek-signal-tint);color:var(--ek-signal-dark)">Signal hell</div><div class="meta"><code>#E2F0E7</code><span>Wächter-Zone, Hinweise</span><span>Grün dunkel darauf 7,4 : 1</span></div></div></div>
+            <div class="col"><div class="st-swatch"><div class="chip" style="background:var(--ek-ink);color:var(--ek-signal-light)">Signal auf Tinte</div><div class="meta"><code>#7FD1A3</code><span>Links, Fokus dunkel</span><span>8,9 : 1 auf Tinte</span></div></div></div>
+          </div>
+          <p class="ek-muted mt-3 mb-0" style="font-size:.9375rem">Bewusst vermieden: Creme, Orange, Lila-Blau-Verläufe. Alle Text-Paare erfüllen WCAG AA (geprüft mit <code>tests/contrast.py</code>).</p>
+        </section>
+
+        <section class="st-block" aria-labelledby="st-type">
+          <h2 class="st-h" id="st-type">Schrift: Fira Sans, selbst gehostet</h2>
+          <p class="st-alpha mb-3">Ää Öö Üü ß 0123456789 €</p>
+          <dl class="st-scale">
+            <dt>H1, 500, bis 68 px</dt><dd><span style="font-size:3rem;font-weight:500;letter-spacing:-.028em;line-height:1.05">Im eigenen Haus.</span></dd>
+            <dt>H2, 500, bis 44 px</dt><dd><span style="font-size:2.25rem;font-weight:500;letter-spacing:-.02em;line-height:1.1">Sie entscheiden.</span></dd>
+            <dt>H3, 600, 20 px</dt><dd><span style="font-size:1.25rem;font-weight:600">Antworten mit Fundstelle</span></dd>
+            <dt>Lead, 400, 20 px</dt><dd><span class="ek-lead">Keine Kosten pro Frage, auch ohne Internet.</span></dd>
+            <dt>Text, 400, 17 px</dt><dd>Ihre Unterlagen werden vor Ort gelesen und eingeordnet. Zeilenlänge höchstens 68 Zeichen, Zeilenabstand 1,6.</dd>
+            <dt>Klein, 400, 15 px</dt><dd class="ek-muted" style="font-size:.9375rem">Beispiel mit erfundenen Angaben.</dd>
+          </dl>
+          <p class="ek-muted mt-3 mb-0" style="font-size:.9375rem">Fira Sans (SIL Open Font License) als WOFF2 im Theme-Modul, keine Anfrage an Google Fonts. Satzschreibung statt Versalien; Überschriften sind leicht enger gesperrt.</p>
+        </section>
+      </div>
+
+      <div class="col-lg-5">
+        <section class="st-block" aria-labelledby="st-buttons">
+          <h2 class="st-h" id="st-buttons">Schaltflächen und Links</h2>
+          <div class="d-flex flex-wrap gap-3 mb-3">
+            <a class="btn btn-primary" href="#st-buttons">Gespräch vereinbaren</a>
+            <a class="btn btn-outline-secondary" href="#st-buttons">Mit eigenen Daten testen</a>
+          </div>
+          <div class="st-ink-panel ek-on-ink d-flex flex-wrap gap-3 align-items-center mb-3">
+            <a class="btn btn-light-signal" href="#st-buttons">Vorab-Analyse anfragen</a>
+            <a class="btn btn-link-ink" href="#st-buttons">Videos ansehen</a>
+          </div>
+          <p class="mb-0">Fließtext mit <a href="#st-buttons">unterstrichenem Link</a>. Eckig mit 2 px Radius, kein Pill, kein Schatten; Fokus als 3 px Rahmen in Signalgrün.</p>
+        </section>
+
+        <section class="st-block" aria-labelledby="st-cards">
+          <h2 class="st-h" id="st-cards">Karten und Elemente</h2>
+          <article class="ek-weg ek-weg--hybrid mb-3" style="height:auto">
+            <h3 class="mb-2"><svg class="ek-icon ek-icon-sm me-2" aria-hidden="true"><use href="assets/icons/sprite.svg#shield-check"></use></svg>Hybrid <span class="ek-tag">zusätzlich buchbar</span></h3>
+            <p class="ek-weg-claim mb-0">Das Gerät in Ihrem Haus bleibt der Kern.</p>
+            <ul><li>Antworten werden bei Ihnen wieder zusammengeführt.</li></ul>
+          </article>
+          <div class="ek-branchen mb-3" style="grid-template-columns:1fr">
+            <a class="ek-branche" href="#st-cards"><svg class="ek-icon" aria-hidden="true"><use href="assets/icons/sprite.svg#receipt"></use></svg><h3>Steuerberatung</h3><p>Branchenzeile: geteilte Linien statt schwebender Karten.</p></a>
+          </div>
+          <p class="mb-0">Platzhalter im Schatten: <span class="ek-token">[Person 1]</span> <span class="ek-token">[Firma 1]</span> <span class="ek-token">[Kennung 1]</span></p>
+        </section>
+
+        <section class="st-block" aria-labelledby="st-icons">
+          <h2 class="st-h" id="st-icons">Icons und Zeichnungen</h2>
+          <div class="st-icons mb-3">
+            <figure><svg aria-hidden="true"><use href="assets/icons/sprite.svg#house-lock"></use></svg>Lokal</figure>
+            <figure><svg aria-hidden="true"><use href="assets/icons/sprite.svg#hdd-rack"></use></svg>Server</figure>
+            <figure><svg aria-hidden="true"><use href="assets/icons/sprite.svg#shield-check"></use></svg>Wächter</figure>
+            <figure><svg aria-hidden="true"><use href="assets/icons/sprite.svg#file-earmark-text"></use></svg>Fundstelle</figure>
+            <figure><svg aria-hidden="true"><use href="assets/icons/sprite.svg#bank"></use></svg>Recht</figure>
+            <figure><svg aria-hidden="true"><use href="assets/icons/sprite.svg#clipboard2-pulse"></use></svg>Praxis</figure>
+            <figure><svg aria-hidden="true"><use href="assets/icons/sprite.svg#wrench-adjustable"></use></svg>Handwerk</figure>
+            <figure><svg aria-hidden="true"><use href="assets/icons/sprite.svg#lightning-charge"></use></svg>Energie</figure>
+          </div>
+          <svg viewBox="0 0 420 90" class="w-100 mb-2" role="img" aria-label="Linienregeln: durchgezogen für das Haus, grün für Daten im Haus, gestrichelt für den Weg nach außen">
+            <line x1="0" y1="15" x2="120" y2="15" stroke="#16222e" stroke-width="6"/><text x="140" y="20" font-size="14" fill="#16222e" font-family="Fira Sans, sans-serif">Wand: Ihr Haus</text>
+            <line x1="0" y1="45" x2="120" y2="45" stroke="#1d6f47" stroke-width="2"/><text x="140" y="50" font-size="14" fill="#16222e" font-family="Fira Sans, sans-serif">Daten im Haus</text>
+            <line x1="0" y1="75" x2="120" y2="75" stroke="#3d5a78" stroke-width="2" stroke-dasharray="6 5"/><text x="140" y="80" font-size="14" fill="#16222e" font-family="Fira Sans, sans-serif">nur Schatten nach außen</text>
+          </svg>
+          <ul class="ek-muted st-rules ps-3 mb-0" style="font-size:.9375rem">
+            <li>Bootstrap Icons (MIT), Umriss, 24 px, Tinte; Signalgrün nur bei Zustand.</li>
+            <li>Keine Emojis, keine Gehirne, Roboter oder Platinen.</li>
+            <li>Illustration als Grundriss und Ablaufzeichnung, gebaut als SVG.</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
